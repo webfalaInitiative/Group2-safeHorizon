@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./output.css">
+    <link rel="stylesheet" href="input.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    
+    <p class="text-4xl font-bold">This is our FAQs</p>
+    <div class="flex w-full flex-col">
+        <div class="flex flex-col">
+            <div class="bg-primary flex justify-between clickable px-6 text-black w-full">
+                <p class="text-2xl">This is Question one:</p>
+                <img class="w-[30px] h-[30px] arrow" src="../svgs/arrowDown.svg" alt="">
+            </div>
+            <div class="unseen">
+                <p class="text-sm px-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt facere tenetur obcaecati deleniti temporibus recusandae ab voluptate, omnis possimus laudantium minima dolor, dolores ipsam ut ex reprehenderit, eaque veritatis quia sed quidem quam ducimus laboriosam! Excepturi maxime alias quisquam et eligendi aliquam soluta tempora ea id illo minima corrupti sequi debitis ratione nulla, aperiam iusto veniam, iste dolorem quidem? Blanditiis, aut eius. Sapiente neque, consequatur voluptas molestias officia explicabo earum quia officiis ducimus in tempora suscipit iste?</p>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+
+        const btn = document.querySelector('.clickable');
+        const show = document.querySelector('.unseen')
+        const arrow = document.querySelector('.arrow')
+
+        btn.addEventListener('click', () => {
+            if(show.classList == 'unseen'){
+                show.classList.remove('unseen')
+                show.classList.add('seen')
+                arrow.style.transform = 'rotate(180deg)'
+            } else {
+                show.classList.remove('seen')
+                show.classList.add('unseen')
+                arrow.style.transform = 'rotate(0deg)'
+            }
+        })
+
+    </script>
+
+</body>
+</html>

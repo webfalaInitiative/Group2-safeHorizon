@@ -3,4 +3,19 @@
 html, body {
     @apply m-0 p-0 bg-[red] font-sans
 }
+
+.unseen{
+    transform: translateY(-10px);
+    transition: .5s;
+    display: none;
+}
+
+.seen{
+    transform: translateY(10px);
+    transition: .5s;
+    display: flex;
+}
+
 @tailwind utilities;
+
+
