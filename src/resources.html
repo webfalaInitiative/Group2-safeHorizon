@@ -6,6 +6,7 @@
     <title>SafeSpace</title>
         <link rel="stylesheet" href="./output.css">
       <script src="https://cdn.tailwindcss.com"></script>
+      <link rel="stylesheet" href="input.css">
 </head>
 <body>
     <header>
@@ -30,9 +31,39 @@
         <div class="w-[7.18rem] h-[7.12rem]"><img src="Vector/icon.svg" alt=""></div>
         <div class="font-bold text-3xl">Resources Page</div>
     </div>
-    <select name="" id=""> hvhh
-        <option value="">one</option>
-        <option value="">teo</option>
-    </select>
+    <div class="flex w-full gap-5 px-20 py-10 flex-col">
+        <div class="flex containea  flex-col">
+            <div class="bg-primary shadow-sm py-4 cursor-pointer flex justify-between clickable px-6 text-black w-full">
+                <p class="font-semibold text-2xl">risk</p>
+                <img class="w-[30px] h-[30px] arrow" src="../svgs/arrowDown.svg" alt="">
+            </div>
+            <div class="unseen">
+                <div class="w-full bg-[#efefef]">
+                    <p class="text-lg w-full px-5 ">A step-by-step guide for humanitarian practitioners.Guidelines for Integrating Gender-Based Violence Interventions in Humanitarian Action Making Humanitarian Responses Safer and More Accessible for Women and Girls:
+                    </p>
+            </div>
+            <hr class="h-[2px] w-full bg-gray-500">
+        </div>
+        <script>
+
+        const containers = document.querySelectorAll('.containea')
+
+        containers.forEach(container => {
+            const btn = container.querySelector('.clickable');
+            const show = container.querySelector('.unseen')
+            const arrow = container.querySelector('.arrow')
+
+            btn.addEventListener('click', () => {
+                if(show.classList == 'unseen'){
+                    show.classList.remove('unseen')
+                    show.classList.add('seen')
+                } else {
+                    show.classList.remove('seen')
+                    show.classList.add('unseen')
+                }
+            })
+        })
+
+    </script>
 </body>
 </html>
