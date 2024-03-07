@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="input.css">
+    <link rel="stylesheet" href="./output.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="flex w-full gap-5 px-20 py-10 flex-col">
+        <div class="flex containea  flex-col">
+            <div class="bg-primary shadow-sm py-4 cursor-pointer flex justify-between clickable px-6 text-black w-full">
+                <p class="font-semibold text-2xl">How can I donate to SafeSpace?</p>
+                <img class="w-[30px] h-[30px] arrow" src="../svgs/arrowDown.svg" alt="">
+            </div>
+            <div class="unseen">
+                <div class="w-full bg-[#efefef]">
+                    <p class="text-lg w-full px-5 ">You can donate to SafeSpace by visiting our website and clicking on the "Donate" button. From there, you'll be guided through the donation process, where you can choose your preferred donation amount and payment method.</p>
+                </div>
+            </div>
+            <hr class="h-[2px] w-full bg-gray-500">
+        </div>
+        <div class="flex w-full gap-5 px-20 py-10 flex-col">
+            <div class="flex containea  flex-col">
+                <div class="bg-primary shadow-sm py-4 cursor-pointer flex justify-between clickable px-6 text-black w-full">
+                    <p class="font-semibold text-2xl">Is my donation to SafeSpace tax-deductible?</p>
+                    <img class="w-[30px] h-[30px] arrow" src="../svgs/arrowDown.svg" alt="">
+                </div>
+                <div class="unseen">
+                    <div class="w-full bg-[#efefef]">
+                        <p class="text-lg w-full px-5 ">Yes, SafeSpace is a registered nonprofit organization, and donations made to us are typically tax-deductible. After making a donation, you will receive a receipt or confirmation email that you can use for tax purposes.</p>
+                    </div>
+                </div>
+                <hr class="h-[2px] w-full bg-gray-500">
+            </div>
+            <div class="flex w-full gap-5 px-20 py-10 flex-col">
+                <div class="flex containea  flex-col">
+                    <div class="bg-primary shadow-sm py-4 cursor-pointer flex justify-between clickable px-6 text-black w-full">
+                        <p class="font-semibold text-2xl">Where does my donation to SafeSpace go?</p>
+                        <img class="w-[30px] h-[30px] arrow" src="../svgs/arrowDown.svg" alt="">
+                    </div>
+                    <div class="unseen">
+                        <div class="w-full bg-[#efefef]">
+                            <p class="text-lg w-full px-5 ">Your donation to SafeSpace goes towards supporting our mission of providing a safe and supportive platform for survivors of sexual and gender-based violence. This includes funding our support services, maintaining our website, and expanding our reach to support more survivors.</p>
+                        </div>
+                    </div>
+                    <hr class="h-[2px] w-full bg-gray-500">
+                </div>
+                <div class="flex w-full gap-5 px-20 py-10 flex-col">
+                    <div class="flex containea  flex-col">
+                        <div class="bg-primary shadow-sm py-4 cursor-pointer flex justify-between clickable px-6 text-black w-full">
+                            <p class="font-semibold text-2xl">Can I make a recurring donation to SafeSpace?</p>
+                            <img class="w-[30px] h-[30px] arrow" src="../svgs/arrowDown.svg" alt="">
+                        </div>
+                        <div class="unseen">
+                            <div class="w-full bg-[#efefef]">
+                                <p class="text-lg w-full px-5 ">Yes, you have the option to make a one-time donation or set up a recurring donation to SafeSpace. Recurring donations help provide stable funding for our ongoing programs and services.</p>
+                            </div>
+                        </div>
+                        <hr class="h-[2px] w-full bg-gray-500">
+                    </div>
+                    <div class="flex w-full gap-5 px-20 py-10 flex-col">
+                        <div class="flex containea  flex-col">
+                            <div class="bg-primary shadow-sm py-4 cursor-pointer flex justify-between clickable px-6 text-black w-full">
+                                <p class="font-semibold text-2xl">Is my donation to SafeSpace secure?</p>
+                                <img class="w-[30px] h-[30px] arrow" src="../svgs/arrowDown.svg" alt="">
+                            </div>
+                            <div class="unseen">
+                                <div class="w-full bg-[#efefef]">
+                                    <p class="text-lg w-full px-5 ">Yes, SafeSpace takes the security of your donation seriously. We use secure payment processing systems to ensure that your personal and financial information is protected.</p>
+                                </div>
+                            </div>
+                            <hr class="h-[2px] w-full bg-gray-500">
+                        </div>
+                    
+
+    <script>
+
+        const containers = document.querySelectorAll('.containea')
+
+        containers.forEach(container => {
+            const btn = container.querySelector('.clickable');
+            const show = container.querySelector('.unseen')
+            const arrow = container.querySelector('.arrow')
+
+            btn.addEventListener('click', () => {
+                if(show.classList == 'unseen'){
+                    show.classList.remove('unseen')
+                    show.classList.add('seen')
+                } else {
+                    show.classList.remove('seen')
+                    show.classList.add('unseen')
+                }
+            })
+        })
+
+    </script>
+</body>
+</html>
