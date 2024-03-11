@@ -8,13 +8,6 @@ html, body {
     box-sizing: border-box
 }
 
-<<<<<<< HEAD
-@tailwind utilities;
-=======
-a:hover {
-    color: black
-}
-
 .unseen{
     transform: translateY(-10px);
     transition: .5s;
@@ -30,4 +23,3 @@ a:hover {
 @tailwind utilities;
 
 
->>>>>>> 89200c475d085eb0bcae91d477130be419d840ab
