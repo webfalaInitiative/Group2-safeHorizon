@@ -20,6 +20,58 @@ html, body {
     display: flex;
 }
 
+body, html{
+    padding: 0;
+    margin: 0;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+}
+
+main{
+    height: 60%;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.home{
+    /* height: 40vh;
+    width: 80vw;
+    background: blue; */
+    /* background-image: url("../Vector/landingimage.svg"); */
+    background-position: center;
+    background-image:url("../Vector/lara.svg");
+    z-index: 100;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 5rem;
+    margin-top: 5rem;
+}
+/* opacity-99 text-white */
+.menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transform: translateY(-100%)
+}
+
+.hamburger{
+    position: fixed;
+    top: 2.5rem;
+    right: 1rem;
+}
+
 @tailwind utilities;
 
 

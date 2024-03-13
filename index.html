@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SafeSpace</title>
-      <link rel="stylesheet" href="./output.css">
+      <link rel="stylesheet" href="./src/output.css">
       <script src="https://cdn.tailwindcss.com"></script>
-
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <div class="mt-[2rem] mx-[5rem] flex gap-[8.85rem]">
+        <div class="mt-[2rem] mx-[5rem] lg:flex hidden gap-[8.85rem]">
             <div class="flex gap-[0.62rem] py-[0.62rem]">
                 <div class="w-[3rem] h-[3rem]"><img class="h-[100%] w-[100%]" src="Vector/icon.svg" alt=""></div>
                 <div class="py-[0.46rem]"><p>SafeSpace</p></div>
@@ -25,9 +25,34 @@
                 <button class="bg-[#415D43] text-white rounded-[0.2rem] w-[6.93rem] h-[2.88rem] font-sans gap-[0.6rem]"><a href="community.html">Join Forum</a></button>
             </div>
         </div>
+
+        <div class="mt-[2rem] mx-[5rem] lg:hidden flex menu gap-[8.85rem]">
+            <div class="flex gap-[0.62rem] py-[0.62rem]">
+                <div class="w-[3rem] h-[3rem]"><img class="h-[100%] w-[100%]" src="Vector/icon.svg" alt=""></div>
+                <div class="py-[0.46rem]"><p>SafeSpace</p></div>
+            </div>
+            <ul class="lg:flex hidden py-[1.15rem] gap-[3.12rem] w-[25.87rem] h-[4.87rem]">
+                <li class="font-bold"><a href="#"><p>Home</p></a></li>
+                <li><a href="resources.html" target="_blank"><p>Resources</p></a></li>
+                <li><a href="about.html" target="_blank">About Us</a></li>
+            </ul>
+            <div class="lg:flex hidden gap-[3.12rem] py-[0.84rem] w-[25.87rem] justify-center">
+                <button class="w-[8rem] h-[2.06rem] -[1.40rem]"><a href="">Contact Us</a></button>
+                <button class="bg-[#415D43] text-white rounded-[0.2rem] w-[6.93rem] h-[2.88rem] font-sans gap-[0.6rem]"><a href="community.html">Join Forum</a></button>
+            </div>
+        </div>
+        <button class="hamburger lg:hidden block">
+            <img src="Vector/menu.svg" alt="">
+            <img src="Vector/close.svg" alt="">
+        </button>
     </header>
-    <div class="ml-[5rem] mr-[5rem] w-[71.35rem] h-[31.5rem] mt-[5rem] opacity-99">
-        <img class="h-[100%] w-[100%]" src="Vector/img1.svg" alt="">
+    <div class="relative">
+        <img class="h-[100%] w-[100%] " src="./Vector/landingimage.svg" alt=""> 
+        <div class="absolute z-40 top-[4.68rem] left-[3.75rem] text-white">
+            <h1 class="font-bold text-7xl ">SafeSpace Heroes</h1> 
+            <p class="pt-[1rem]">Your Anonymous Support Network For Healing From Sexual And Gender-Based Violence.</p>
+        </div>
+        <button class="bg-[#415D43] text-white absolute top-[22.5rem] left-[3.75rem] rounded-[0.2rem] w-[6.93rem] h-[2.88rem] font-sans gap-[0.6rem]"><a href="community.html">Join Forum</a></button>
     </div>
     <div class="flex">
         <div class="mt-[8.75rem] ml-[5rem] mr-[5rem] px-[0.62rem] py-0 gap-[1.87rem] w-[32.06rem] h-[18.06rem]">

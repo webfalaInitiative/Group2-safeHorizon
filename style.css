@@ -1,0 +1,32 @@
+body,
+html {
+  padding: 0;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+main {
+  height: 100%;
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.home {
+  height: 100%;
+  width: 80vw;
+  /* background: blue; */
+  background: url(./Vector/image\ landing.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
