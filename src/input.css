@@ -1,77 +1,60 @@
 @tailwind base;
 @tailwind components;
-html, body {
-    @apply m-0 p-0 font-sans
+html,
+body {
+  @apply m-0 p-0 font-sans;
 }
 
-*{
-    box-sizing: border-box
+* {
+  box-sizing: border-box;
 }
 
-.unseen{
-    transform: translateY(-10px);
-    transition: .5s;
-    display: none;
+.unseen {
+  transform: translateY(-10px);
+  transition: 0.5s;
+  display: none;
 }
 
-.seen{
-    transform: translateY(10px);
-    transition: .5s;
-    display: flex;
+.seen {
+  transform: translateY(10px);
+  transition: 0.5s;
+  display: flex;
 }
 
-body, html{
-    padding: 0;
-    margin: 0;
+body,
+html {
+  padding: 0;
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow-y: auto;
 }
 
-*{
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
 }
 
-body{
-    width: 100vw;
-    height: 100vh;
+body {
+  width: 100vw;
+  height: 100vh;
 }
 
-main{
-    height: 60%;
-    width: 60%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
+.menu {
+  position: fixed;
+  top: -1000px;
+  left: 15%;
+  right: 0;
+  bottom: 0;
+  transform: translateY(-100%);
+  transition: 0.5s;
 }
 
-.home{
-    /* height: 40vh;
-    width: 80vw;
-    background: blue; */
-    /* background-image: url("../Vector/landingimage.svg"); */
-    background-position: center;
-    background-image:url("../Vector/lara.svg");
-    z-index: 100;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin: 0 5rem;
-    margin-top: 5rem;
+.hamburger {
+  position: fixed;
+  top: 2.5rem;
+  right: 1rem;
 }
-/* opacity-99 text-white */
-.menu{
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    transform: translateY(-100%)
+.show-menu {
+  top: 150px;
 }
-
-.hamburger{
-    position: fixed;
-    top: 2.5rem;
-    right: 1rem;
-}
-
 @tailwind utilities;
-
-
