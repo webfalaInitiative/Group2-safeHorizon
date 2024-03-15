@@ -4,26 +4,77 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SafeSpace</title>
-    <link rel="stylesheet" href="./output.css">
+    <link rel="stylesheet" href="./src/output.css">
+    <link rel="stylesheet" href="./src/input.css">
       <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    <header>
-        <div class="mt-[2rem] mx-[5rem] flex gap-[8.85rem]">
-            <div class="flex gap-[0.62rem] py-[0.62rem]">
-                <div class="w-[3rem] h-[3rem]"><img class="h-[100%] w-[100%]" src="Vector/icon.svg" alt=""></div>
-                <div class="py-[0.46rem]"><p>SafeSpace</p></div>
-            </div>
-            <ul class="flex py-[1.15rem] gap-[3.12rem] w-[25.87rem] h-[4.87rem]">
-                <li><a href="index.html"><p>Home</p></a></li>
-                <li><a href="resources.html" target="_blank"><p>Resources</p></a></li>
-                <li class="font-bold"><a href="about.html" target="_blank">About Us</a></li>
-            </ul>
-            <div class="flex gap-[3.12rem] py-[0.84rem] w-[25.87rem] justify-center">
-                <button class="w-[8rem] h-[2.06rem] -[1.40rem]"><a href="">Contact Us</a></button>
-                <button class="bg-[#415D43] rounded-[0.2rem] text-white w-[6.93rem] h-[2.88rem] font-sans gap-[0.6rem]"><a href="community.html" target="_blank">Join Forum</a></button>
-            </div>
+    <header class="flex justify-between">
+      <div class="mt-[2rem] mx-[5rem] lg:flex hidden gap-[8.85rem]">
+        <div class="flex gap-[0.62rem] py-[0.62rem]">
+          <div class="w-[3rem] h-[3rem]">
+            <img class="h-[100%] w-[100%]" src="Vector/icon.svg" alt="" />
+          </div>
+          <div class="py-[0.46rem]"><p>SafeSpace</p></div>
         </div>
+        <ul
+          class="lg:flex hidden py-[1.15rem] gap-[3.12rem] w-[25.87rem] h-[4.87rem]"
+        >
+          <li>
+            <a href="./index.html"><p>Home</p></a>
+          </li>
+          <li>
+            <a href="./resources.html" target="_blank"><p>Resources</p></a>
+          </li>
+          <li><a href="./about.html" target="_blank">About Us</a></li>
+        </ul>
+        <div
+          class="lg:flex hidden gap-[3.12rem] py-[0.84rem] w-[25.87rem] justify-center"
+        >
+          <button class="w-[8rem] h-[2.06rem] -[1.40rem]">
+            <a href="">Contact Us</a>
+          </button>
+          <button
+            class="bg-[#415D43] text-white rounded-[0.2rem] w-[6.93rem] h-[2.88rem] font-sans gap-[0.6rem]"
+          >
+            <a href="community.html">Join Forum</a>
+          </button>
+        </div>
+      </div>
+
+      <div class="mt-[2rem] mx-[1.56rem] lg:hidden flex gap-[8.85rem]">
+        <div class="flex">
+          <div class="">
+            <img class="h-[100%] w-[100%]" src="Vector/icon.svg" alt="" />
+          </div>
+          <div class="py-[0.46rem]"><p>SafeSpace</p></div>
+        </div>
+        <ul
+          class="menu lg:hidden block gap-[3.12rem] w-[25.87rem] h-[4.87rem]"
+        >
+          <li>
+            <a href="./index.html" target="_blank"><p>Home</p></a>
+          </li>
+          <li>
+            <a href="resources.html" target="_blank"><p>Resources</p></a>
+          </li>
+          <li class="font-bold"><a href="about.html" target="_blank">About Us</a></li>
+          <li><a href="">Contact Us</a></li>
+          <button
+            class="bg-[#415D43] text-white rounded-[0.2rem] w-[6.93rem] h-[2.88rem] font-sans gap-[0.6rem]"
+          >
+            <a href="community.html">Join Forum</a>
+          </button>
+        </ul>
+      </div>
+      <button class="hamburger lg:hidden block">
+        <img class="menu-icon w-[2rem] h-[2rem]" src="Vector/menu.svg" alt="" />
+        <img
+          src="Vector/close.svg"
+          alt=""
+          class="close-icon hidden w-[2rem] h-[2rem]"
+        />
+      </button>
     </header>
     <div class="flex gap-[0.44rem] ml-[29.18rem] mr-[31.5rem] mt-[5rem]">
         <div class="w-[7.18rem] h-[7.12rem]"><img src="Vector/icon.svg" alt=""></div>
@@ -85,5 +136,6 @@
         </div>
         <div class=" items-center justify-center flex flex-col"><p>© 2024 SafeSpace. All rights reserved.</p></div>
     </footer>
+    <script src="./main.js"></script>
 </body>
 </html>
