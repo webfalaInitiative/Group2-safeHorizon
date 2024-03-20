@@ -50,7 +50,6 @@ body {
 }
 
 .hamburger {
-  position: fixed;
   top: 2.5rem;
   right: 1rem;
 }
