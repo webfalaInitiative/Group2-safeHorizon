@@ -4,46 +4,78 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SafeSpace</title>
-    <link rel="stylesheet" href="./output.css">
+    <link rel="stylesheet" href="./src/output.css">
       <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    <header>
-        <div class="mt-[2rem] mx-[5rem] flex gap-[8.85rem]">
-            <div class="flex gap-[0.62rem] py-[0.62rem]">
-                <div class="w-[3rem] h-[3rem]"><img class="h-[100%] w-[100%]" src="Vector/icon.svg" alt=""></div>
-                <div class="py-[0.46rem]"><p>SafeSpace</p></div>
-            </div>
-            <ul class="flex py-[1.15rem] gap-[3.12rem] w-[25.87rem] h-[4.87rem]">
-                <li><a href="index.html"><p>Home</p></a></li>
-                <li><a href="resources.html" target="_blank"><p>Resources</p></a></li>
-                <li><a href="about.html" target="_blank">About Us</a></li>
-            </ul>
-            <div class="flex gap-[3.12rem] py-[0.84rem] w-[25.87rem] justify-center">
-                <button class="w-[8rem] h-[2.06rem] -[1.40rem]"><a href="">Contact Us</a></button>
-                <button class="bg-[#415D43] rounded-[0.2rem] text-white w-[6.93rem] h-[2.88rem] font-sans gap-[0.6rem]"><a href="community.html" target="_blank">Join Forum</a></button>
-            </div>
+    <header class="flex justify-between">
+    <div class="mt-[2rem] mx-[5rem] lg:flex hidden gap-[8.85rem]">
+      <div class="flex gap-[0.62rem] py-[0.62rem]">
+        <div class="w-[3rem] h-[3rem]">
+          <img class="h-[100%] w-[100%]" src="Vector/icon.svg" alt="" />
         </div>
-    </header>
-    <div class="flex gap-[0.44rem] ml-[30rem] mr-[30rem] mt-[5rem]">
-        <div class="w-[7.18rem] h-[7.12rem]"><img src="Vector/icon.svg" alt=""></div>
-        <div class="font-bold text-4xl">Community</div>
+        <div class="py-[0.46rem]"><p>SafeSpace</p></div>
+      </div>
+      <ul class="lg:flex hidden py-[1.15rem] gap-[3.12rem] w-[25.87rem] h-[4.87rem]">
+        <li><a href="./index.html"><p>Home</p></a></li>
+        <li><a href="./resources.html" target="_blank"><p>Resources</p></a></li>
+        <li><a href="./about.html" target="_blank">About Us</a></li>
+      </ul>
+      <div class="lg:flex hidden gap-[3.12rem] py-[0.84rem] w-[25.87rem] justify-center">
+        <button class="w-[8rem] h-[2.06rem] -[1.40rem]"><a href="./contact.html" target="_blank">Contact Us</a></button>
+        <button class="bg-[#415D43] text-white rounded-[0.2rem] w-[6.93rem] h-[2.88rem] font-sans gap-[0.6rem]"><a href="./sign-up.html">Join Forum</a></button>
+      </div>
     </div>
-    <section class="w-[80.68rem] h-[34.18rem] mt-[3rem] ml-[5rem] mr-[4.31rem] bg-[#F6F6F6]">
+
+    <div class="mt-[2rem] mx-[1.56rem] lg:hidden flex gap-[8.85rem]">
+      <div class="flex">
+        <div class="">
+          <img class="h-[100%] w-[100%]" src="Vector/icon.svg" alt="" />
+        </div>
+        <div class="py-[0.46rem]"><p>SafeSpace</p></div>
+      </div>
+      <ul
+          class="menu lg:hidden block gap-[3.12rem] w-[25.87rem] h-[4.87rem]"
+        >
+          <li>
+            <a href="./index.html" target="_blank"><p>Home</p></a>
+          </li>
+          <li>
+            <a href="resources.html" target="_blank"><p>Resources</p></a>
+          </li>
+          <li class="font-bold"><a href="about.html" target="_blank">About Us</a></li>
+          <li><a href="./contact.html" target="_blank">Contact Us</a></li>
+          <button
+            class="bg-[#415D43] text-white rounded-[0.2rem] w-[6.93rem] h-[2.88rem] font-sans gap-[0.6rem]"
+          >
+            <a href="community.html">Join Forum</a>
+          </button>
+      </ul>
+    </div>
+    <button class="hamburger lg:hidden block">
+        <img class="menu-icon w-[2rem] h-[2rem]" src="Vector/menu.svg" alt="" />
+        <img src="Vector/close.svg" alt="" class="close-icon hidden w-[2rem] h-[2rem]" />
+    </button>
+  </header>
+    <div class="flex gap-[0.44rem] lg:ml-[29.18rem] ml-[100px] lg:mr-[31.5rem] mr-[] mt-[5rem] items-center justify-center">
+        <div class="lg:w-[7.18rem] w-[32.6px] lg:h-[7.12rem] h-[30.3px]"><img src="Vector/icon.svg" alt=""></div>
+        <div class="font-bold lg:text-3xl text-[18px] lg:w-[581px] w-[150px] lg:h-[119px] h-[31px]">Community</div>
+    </div>
+    <section class="lg:w-[80.68rem] w-[326px] lg:h-[34.18rem] h-[215px] lg:mt-[3rem] mt-[30px] lg:ml-[5rem] ml-[25px] lg:mr-[4.31rem] mr-[24px] bg-[#F6F6F6]">
         <div>
-            <div class="w-[33rem] h-[3.18rem] ml-[23.90rem] mr-[23.78rem] font-bold pt-[3.5rem] text-3xl">“Don't Listen To What They Say”</div>
-            <div class="px-[4.34rem] [24.31rem] h-[3.56rem] mt-[4.5rem] ml-[24.25rem] color-[#757575]">Join The Biggest Community Of Survivors</div>
+            <div class="lg:w-[33rem] w-[326px] lg:h-[3.18rem] h-[22px] text-center font-bold lg:pt-[3.5rem] pt-[21px] lg:text-3xl text-[13px]">“Don't Listen To What They Say”</div>
+            <div class="lg:px-[4.34rem] px-[25px] h-[3.56rem] lg:mt-[4.5rem] mt-[30.2px] text-center lg:text-[20px] text-[11px] color-[#757575]">Join The Biggest Community Of Survivors</div>
         </div>
-        <div class="w-[76.62] h-[5.5rem] mt-[2.87rem] ml-[3.37rem] mr-[0.68rem] px-[0.62rem]">
-            <p class="font-bold pb-[1.25rem]">Share</p>
-            <a href=""><p>Share your experience with trusted counsellors.</p></a>
+        <div class="lg:w-[76.62] w-[294px] lg:h-[5.5rem] h-[40px] lg:mt-[2.87rem] mt-[2px] lg:ml-[3.37rem] ml-[25px] mr-[0.68rem] px-[0.62rem]">
+            <p class="font-bold lg:pb-[1.25rem] pb-[9.3px] lg:text-[24px] text-[12px]">Share</p>
+            <a class="lg:text-[20px] text-[8px]" href=""><p>Share your experience with trusted counsellors.</p></a>
         </div>
-        <div class="w-[76.62] h-[5.5rem] mt-[2.87rem] ml-[3.37rem] mr-[0.68rem] px-[0.62rem]">
-            <p class="font-bold pb-[1.25rem]">Choose</p>
-            <a href=""><p>Choose the conversation that works for you.</p></a>
+        <div class="lg:w-[76.62] w-[294px] lg:h-[5.5rem] h-[40px] lg:mt-[2.87rem] mt-[9.7px] lg:ml-[3.37rem] ml-[25px] mr-[0.68rem] px-[0.62rem]">
+            <p class="font-bold lg:pb-[1.25rem] pb-[9.3px] lg:text-[24px] text-[12px]">Choose</p>
+            <a class="lg:text-[20px] text-[8px]" href=""><p>Choose the conversation that works for you.</p></a>
         </div>
     </section>
-    <footer class="bg-[#415D43] w- h-[31.88rem] mt-[10.5rem] text-white">
+    <footer class="bg-[#415D43] lg:block hidden w- h-[31.88rem] mt-[10.5rem] text-white">
         <div class="pb-[9.18rem] flex justify-between">
             <div class="mr-[2.56rem]">
                 <div class="pt-[5.5rem] ml-[5.25rem]">
@@ -88,5 +120,51 @@
         </div>
         <div class=" items-center justify-center flex flex-col"><p>© 2024 SafeSpace. All rights reserved.</p></div>
     </footer>
+    <footer class="w-full h-[650px] bg-[#415D43] lg:hidden flex flex-col text-white mt-[3rem]">
+      <div class="flex">
+        <div class="flex flex-col mt-[23px] ml-[25px] w-[155px]">
+          <div class="flex">
+            <img src="./Vector/iconfooter.svg" alt="">
+            <p class="text-[10px]">SafeSpace</p>
+          </div>
+          <div class="text-[7px] pt-[10px]"><p>Your anonymous support network for healing from sexual and gender-based violence.</p></div>
+          <div class="text-[8px] pt-[33px]"><p>connect with us on social media</p></div>
+          <div class="flex justify-between pt-[13px]">
+            <a href="https://www.facebook.com/webfalainitiative?mibextid=LQQJ4d" target="_blank"><img src="./Vector/fbfooter.svg" alt=""></a>
+            <a href="https://x.com/webfalainitiat1" target="_blank"><img src="./Vector/twitterfooter.svg" alt=""></a>
+            <a href="https://www.linkedin.com/company/webfala-digital-skills-for-all-initiative/" target="_blank"><img src="./Vector/linkedlnfooter.svg" alt=""></a>
+            <a href="https://www.instagram.com/webfalainitiative?igsh=MzRlODBiNWFlZA==" target="_blank"><img src="./Vector/igfooter.svg" alt=""></a>
+            <a href="https://whatsapp.com/channel/0029Va9I8fSJJhzTUTdFsp1q" target="_blank"><img src="./Vector/whatsappfooter.svg" alt=""></a>
+          </div>
+          <div></div>
+        </div>
+        <div class="w-[136px] flex flex-col mt-[19px] pl-[50px]">
+          <p class="text-[10px] pb-[10px]">Contact Us</p>
+          <p class="text-[7px]">info@Safeher.org</p>
+          <p class="text-[7px] pt-[8px]">Support@safeher.com</p>
+          <p class="text-[7px] pt-[8px]">The city of Refugee: No 14, Station Road, Along Royalton Hotel, GRA, Ilorin.</p>
+          <p class="text-[7px] pt-[8px]">1-234-555-HOPE </p>
+        </div>
+      </div>
+      <div class="flex">
+        <div class="flex flex-col ml-[24px] mt-[38px]">
+          <div>
+            <p class="text-[10px] pb-[5px]">Quick Links</p>
+            <p class="text-[7px] pt"><a href="./index.html">Home</a></p>
+            <p class="text-[7px] pt-[10px]"><a href="./about.html">About us</a></p>
+            <p class="text-[7px] pt-[10px]"><a href="./FAQ.html">Get Support</a></p>
+            <p class="text-[7px] pt-[10px]"><a href="./resources.html">Resources</a></p>
+            <p class="text-[7px] pt-[10px]"><a href="./community.html">Community</a></p>
+          </div>
+          <div class="pt-[54px] text-[7px]"> &copy; 2024 SafeSpace. All rights reserved.</div>
+        </div>
+        <div class="mt-[38px] pl-[90px]">
+          <p class="text-[10px]">Stay Informed</p>
+          <div class="pt-[7px] text-[7px]"><label for="email">EMAIL</label></div>
+          <div class="pt-[7px] text-[7px]"><input type="email"></div>
+        </div>
+      </div>
+    </footer>
+    <script src="main.js"></script>
 </body>
 </html>
